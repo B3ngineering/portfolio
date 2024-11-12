@@ -1,11 +1,12 @@
-#[macro_use] extern crate rocket;
+use yew::prelude::*;
 
-#[get("/")]
-fn index() -> &'static str {
-    "Welcome to my portfolio!"
+#[function_component(Model)]
+fn model() -> Html {
+    html! {
+        <div>{"Hello World"}</div>
+    }
 }
 
-#[launch]
-fn rocket() -> _ {
-    rocket::build().mount("/", routes![index])
+fn main() {
+    yew::start_app::<Model>();
 }
