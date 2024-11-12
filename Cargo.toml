@@ -5,4 +5,4 @@ edition = "2021"
 
 [dependencies]
 yew = "0.19.3"
-yew-router = { git = "https://github.com/yewstack/yew.git" }
+yew-router = "0.16"

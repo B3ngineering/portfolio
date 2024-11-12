@@ -1,12 +1,19 @@
-use yew::prelude::*;
+mod components;
+mod router;
 
-#[function_component(Model)]
+use yew::prelude::*;
+use yew_router::prelude::*;
+use crate::router::{switch, Route};
+
+#[function_component(App)]
 fn model() -> Html {
     html! {
-        <div>{"Hello World"}</div>
+        <BrowserRouter>
+            <Switch<Route> render={Switch::render(switch)} />
+        </BrowserRouter>
     }
 }
 
 fn main() {
-    yew::start_app::<Model>();
+    yew::start_app::<App>();
 }
