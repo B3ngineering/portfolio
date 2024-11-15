@@ -20,7 +20,8 @@ pub fn navbar() -> Html {
                 </a>
             </div>
             <ul>
-                <li><Link<Route> to={Route::Home}>{"Home"}</Link<Route>></li>
+                // <li><Link<Route> to={Route::Home}>{"Home"}</Link<Route>></li>
+                <li><a href="/static/resume.pdf" target="_blank">{"Resume"}</a></li>
                 <li><Link<Route> to={Route::About}>{"About"}</Link<Route>></li>
                 <li><Link<Route> to={Route::Portfolio}>{"Portfolio"}</Link<Route>></li>
             </ul>
