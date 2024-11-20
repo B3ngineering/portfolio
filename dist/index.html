@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yew App</title>
+    <link rel="stylesheet" href="/styles-6fdd0888d1b907c2.css" integrity="sha384&#x2D;7&#x2F;O3Babb47hfR4YaD4ogEf0wTJHCxhuwX2dHoiLLn3kBDH0sBPozfxhV0qytQrrI"/>
+    
+    <base href="/" />
+  <link rel="modulepreload" href="/portfolio-e8ab092822b9a904.js" crossorigin=anonymous integrity="sha384-hEQwPc0WHi9VCf1PSuWvzxgp7SKff/52ECD6+In5opghMF3kJS32UxZxyNevbfmv"><link rel="preload" href="/portfolio-e8ab092822b9a904_bg.wasm" crossorigin=anonymous integrity="sha384-WJeXbH74wrGok69BH6eyjYlxTnfqq1E3B/Dh/bhEhbYY4pvT8ec8V1bG3PAnn43g" as="fetch" type="application/wasm"></head>
+  <body>
+  
+<script type="module" nonce="EZNyrsR0YHuVf98cWAoUow==">
+import init, * as bindings from '/portfolio-e8ab092822b9a904.js';
+const wasm = await init({ module_or_path: '/portfolio-e8ab092822b9a904_bg.wasm' });
+
+
+window.wasmBindings = bindings;
+
+
+dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
+
+</script></body>
+</html>
